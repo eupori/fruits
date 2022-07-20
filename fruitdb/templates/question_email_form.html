@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fruit Match email</title>
+  <style>
+    .button {
+      background-color: #ffffff;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+    }
+
+    .button4 {
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 100%; background-color: #ffffff;">
+    <table
+      style="max-width: 600px; width: 100%; table-layout:fixed; border-collapse: collapse; text-align: center; margin: 0 auto;">
+      <tbody>
+        <!-- <tr>
+          <td>
+            <a><img src="cid:ifood-gene-logo" alt="ifood-gene-logo"
+                style="max-width: 200px; padding-top: 2.45em; border: 0;"></a>
+          </td>
+        </tr> -->
+        <tr>
+          <td><img src="cid:cs-banner" alt="ifood-gene-image" style="max-width: 100%; vertical-align: bottom;">
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center; background: #ffffff;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td>
+                  <table
+                    style="max-width: 420px; width: 100%; border-collapse: collapse; margin: 0 auto; border-top: solid 1px #dcdcdc; border-bottom: solid 1px #dcdcdc;">
+                    <colgroup>
+                      <col style="width: 20%;">
+                      <col style="width: 80%;">
+                    </colgroup>
+                    <tr>
+                      <th
+                        style="text-align: left; color: #7a7a7a; font-size: 14px; line-height: 2.57; font-weight: bold; white-space: nowrap;  padding: 0 10px 0px;">
+                        고객 ID</th>
+                      <td
+                        style="text-align: left; color: #353535; font-size: 14px; line-height: 2.57; padding: 0 10px 0px;font-weight:600;">
+                        <p id="serial_number">{{ username }}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        style="text-align: left; color: #7a7a7a; font-size: 14px; line-height: 2.57; font-weight: bold; white-space: nowrap;  padding: 0 10px 0px;">
+                        고객명</th>
+                      <td
+                        style="text-align: left; color: #353535; font-size: 14px; line-height: 2.57; padding: 0 10px 0px;font-weight:600;">
+                        <p id="serial_number">{{ name }}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        style="text-align: left; color: #7a7a7a; font-size: 14px; line-height: 2.57; font-weight: bold; white-space: nowrap;  padding: 0 10px 0px;">
+                        이메일</th>
+                      <td
+                        style="text-align: left; color: #353535; font-size: 14px; line-height: 2.57; padding: 0 10px 0px;font-weight:600;">
+                        <p id="serial_number">{{ email }}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                        style="text-align: left; color: #7a7a7a; font-size: 14px; line-height: 2.57; font-weight: bold; white-space: nowrap;  padding: 0 10px 0px;">
+                        내용</th>
+                      <td
+                        style="text-align: left; color: #353535; font-size: 14px; line-height: 2.57; padding: 0 10px 0px;font-weight:600;">
+                        <p id="serial_number">{{ content }}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th
+                      style="text-align: left; color: #7a7a7a; font-size: 14px; line-height: 2.57; font-weight: bold; white-space: nowrap;  padding: 0 10px 0px;">
+                      문의 시간</th>
+                    <td
+                      style="text-align: left; color: #353535; font-size: 14px; line-height: 2.57; padding: 0 10px 0px;white-space: nowrap;font-weight:600;">
+                      <p id="serial_number">{{ created_at }}</p>
+                    </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: left;color: #58585a; font-size: 12px; padding: 20px 0px;">문의사항이 있으시면 support@d-if.kr로 문의해주시기 바랍니다.</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;color: #58585a; font-size: 12px; line-height: 1.5; padding-bottom: 3em;">16954 경기도 용인시 기흥구 흥덕1로 13
+            흥덕IT밸리 타워A동 2904호<br>
+            ©2020 D.iF, Inc. ALL RIGHTS RESERVED.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

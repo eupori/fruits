@@ -1,0 +1,40 @@
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+{{object.header|safe}}
+    <body style="display: block;">
+    
+    
+    <div class="service_contents article_contents #post_view">
+    
+        <div class="wrap_view_article wrap_article article_view_disable_selection ">
+            <!-- 본문 -->
+            
+        {{object.content|safe}}
+        </div>
+        
+    </div>
+    <script>
+    document.getElementsByClassName("wrap_body_frame")[0].style.marginBottom="150px";
+    document.getElementsByClassName("btn_app")[0].remove()
+    document.getElementsByClassName("f_l author")[0].href="#"
+    document.getElementsByClassName("f_l date")[0].innerHTML = '{{object.time_since_ko}}'
+
+    window.onload = function() {
+        var elements = document.getElementsByTagName("img");
+        images = []
+        Array.from(elements).forEach((image, i) => {
+            images.push(image.src)
+        });
+        // console.log(images)
+        Array.from(elements).forEach((image, i) => {
+            // console.log(i)
+            // images += (this.src)
+            image.addEventListener('click', function (e) {
+                // console.log(this.src);
+                window.CHANNEL_NAME.postMessage(JSON.stringify([images, i]));
+                // window.CHANNEL_NAME.close()
+            });
+        });
+    }
+
+    </script>
+    </body></html>
